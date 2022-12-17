@@ -1,0 +1,32 @@
+5
+a=7
+intg a;;
+a=7
+a = a**3
+b
+b=5
+intg b;;
+b=98
+b
+a
+a++++
+a
+b
+c++++
+c
+c=76
+c
+a====22
+a<<==4
+a>>==4
+a%%5
+intg c;;
+c++++
+c
+intg ankon,,tamim,,sadi,,shafin;;
+ankon
+af
+tamim
+sadi
+fdsdf
+shafin

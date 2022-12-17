@@ -1,0 +1,27 @@
+5
+Not Declared
+INTEGER Declared
+Not Declared
+Not Declared
+INTEGER Declared
+98
+21
+22
+98
+Not Declared
+Not Declared
+Not Declared
+Not Declared
+1
+0
+1
+2
+INTEGER Declared
+1
+INTEGER Declared
+0
+Not Declared
+0
+0
+Not Declared
+0
