@@ -70,7 +70,7 @@
      ssqrt = 286,
      prime = 287,
      ffor = 288,
-     iif = 289,
+     iiff = 289,
      eelse = 290,
      eelif = 291,
      wwhile = 292,
@@ -79,7 +79,14 @@
      FLOAT = 295,
      STRING = 296,
      CHARACTER = 297,
-     slcmnt = 298
+     slcmnt = 298,
+     mlcmnt = 299,
+     fbs = 300,
+     fbf = 301,
+     sbs = 302,
+     sbf = 303,
+     headr = 304,
+     extension = 305
    };
 #endif
 

@@ -1,32 +1,82 @@
-5
-a=7
-intg a;;
-a=7
-a = a**3
-b
-b=5
-intg b;;
-b=98
-b
-a
-a++++
-a
-b
-c++++
-c
-c=76
-c
-a====22
-a<<==4
-a>>==4
-a%%5
-intg c;;
-c++++
-c
-intg ankon,,tamim,,sadi,,shafin;;
-ankon
-af
-tamim
-sadi
-fdsdf
-shafin
+#include((stdio.h))
+
+intg a,,b,,c,,d;;
+
+a=5
+
+write a
+
+b=a
+
+
+
+write b
+
+//// This is a Single Line Comment
+//** This
+    is 
+    Multiple
+    Line 
+    Comment **//
+
+iif((a====b))
+
+{{a=7;; write a
+
+}}
+
+eelif((a<<==34))
+
+{{b=a**--2;; write b
+
+}}
+
+eelse
+
+{{c=a++3;; write c
+
+}}
+ffor((intg i = 0;; i<<==6;;i++++2))
+
+{{ a = a**3;;write a
+
+}}
+
+ffor((intg j = 20;; j>>==4;;j----4))
+
+{{ iif((a====b))
+
+{{a=7;; write a
+
+}}
+
+eelif((a<<==34))
+
+{{b=a**--2;; write b
+
+}}
+eelif((a<<==34))
+
+{{b=a**--3;; write b
+
+}}
+eelif((a<<==34))
+
+{{b=a**--4;; write b ;;write 54645645
+
+}}
+eelse
+
+{{c=a++3;; write c
+
+}}
+
+}}
+
+whil((a>>==5))
+{{ a----2;;write prime 7 ;; write prime 50
+}}
+whil((a<<==9))
+{{ a++++2;; write a^^2 ;; write 5;; 
+}}
+func abcd((intg p intg q)){{}}intg

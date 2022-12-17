@@ -1,27 +1,84 @@
+Header File Detected
+
+INTEGER Declared
+
 5
-Not Declared
-INTEGER Declared
-Not Declared
-Not Declared
-INTEGER Declared
-98
+
+5
+
+Single line comment : //// This is a Single Line Comment
+
+Multiple line Comment Starts : //** This
+    is 
+    Multiple
+    Line 
+    Comment **// :Multiple line Comment Ends
+
+7
+
+-14
+
+10
+
+If condition true
+
 21
-22
-98
-Not Declared
-Not Declared
-Not Declared
-Not Declared
+
+For loop incremented by 2
+
+For loop incremented by 2
+
+For loop incremented by 2
+
+For loop incremented by 2
+
+For loop finished
+
+7
+
+-14
+
+-21
+
+-28
+
+54645645
+
+10
+
+If condition false
+
+For loop decremented by 4
+
+For loop decremented by 4
+
+For loop decremented by 4
+
+For loop decremented by 4
+
+For loop decremented by 4
+
+For loop finished
+
 1
+
 0
-1
-2
-INTEGER Declared
-1
-INTEGER Declared
-0
-Not Declared
-0
-0
-Not Declared
-0
+
+While loop decremented by 2
+
+While loop decremented by 2
+
+While loop finished
+
+49
+
+5
+
+While loop incremented by 2
+
+While loop incremented by 2
+
+While loop finished
+
+abcd Function Declared
+

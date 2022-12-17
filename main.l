@@ -31,8 +31,8 @@ io "++++"|"----"?
 
 %%
 
-
-
+.h               {return extension;}
+"#include"      {return headr;}
 "Begin"         {return begin;}
 "Finish"        {return end;}
 "intg"          {return int_type;}
@@ -62,12 +62,15 @@ io "++++"|"----"?
 "root"          {return ssqrt;}
 "prime"         {return prime;}
 "ffor"          {return ffor;}
-"iif"           {return iif;}
-"eelse"         {return eelse;}
-"eelif"         {return eelif;}
-"wwhile"        {return wwhile;}
+"iif"           {return iiff;}
+(\n)*"eelse"         {return eelse;}
+(\n)*"eelif"         {return eelif;}
+"whil"        {return wwhile;}
 "func"          {return ffunc;}
-
+(\n)*"(("           {return fbs;}
+(\n)*"))"           {return fbf;}
+(\n)*"{{"            {return sbs;}
+(\n)*"}}"            {return sbf;}
 
 
 {Int}      {
@@ -80,13 +83,17 @@ io "++++"|"----"?
  			}
 {Float}         {yylval = atoi(yytext);
                 return FLOAT;}
-{String}        {yylval = *yytext;
+{String}        {yylval = strdup(yytext);
                 return STRING;} 
 {Char}          {yylval = *yytext;
                 return CHARACTER;}
 
 
-"////".*      {return slcmnt;}
+"////".*     {yylval = strdup(yytext);
+                return slcmnt;}
+
+"//**"(.*|\n)*"**//" {yylval = strdup(yytext);
+                return mlcmnt;}
 
 
 
@@ -94,6 +101,7 @@ io "++++"|"----"?
 
 
 [ \t]   ;       /* skip whitespace */
+[ \n]   ;
 
 .               yyerror("Unknown character");
 
