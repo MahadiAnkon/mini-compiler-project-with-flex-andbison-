@@ -100,10 +100,9 @@ io "++++"|"----"?
 "  " {}
 
 
-[ \t]   ;       /* skip whitespace */
-[ \n]   ;
-
-.               yyerror("Unknown character");
+[ \t]   {}       /* skip whitespace */
+[\n]       {}
+.               {printf("unknown");}
 
 
 %%

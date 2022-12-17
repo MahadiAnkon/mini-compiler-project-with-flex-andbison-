@@ -8,7 +8,7 @@
         extern FILE *yyout;
 	int yylex();
 	int yyparse();
-
+    void yyerror(char *s);
 
     char VAR[10000][10000];
     int VALUE[10000];
@@ -108,6 +108,7 @@
 
 program:
          program statement '\n\n'
+         | begin program end  {printf("program Successfully Ended");}
 
 
         
@@ -119,8 +120,7 @@ program:
 statement:
         
           statement eol statement
-
-
+        |    statement statement
         | expression                     
         
         | int_type syn eol                { if($2 == "not"){printf("INTEGER Declared\n\n");}}

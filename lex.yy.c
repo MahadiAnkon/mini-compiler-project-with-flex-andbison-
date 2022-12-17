@@ -993,21 +993,21 @@ YY_RULE_SETUP
 case 49:
 YY_RULE_SETUP
 #line 103 "main.l"
-;       /* skip whitespace */
+{}       /* skip whitespace */
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
 #line 104 "main.l"
-;
+{}
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 106 "main.l"
-yyerror("Unknown character");
+#line 105 "main.l"
+{printf("unknown");}
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 109 "main.l"
+#line 108 "main.l"
 ECHO;
 	YY_BREAK
 #line 1014 "lex.yy.c"
@@ -1896,7 +1896,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 109 "main.l"
+#line 108 "main.l"
 
 
 int yywrap(void) {
